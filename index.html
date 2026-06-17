@@ -15,7 +15,6 @@
 
 <style>
 :root {
-  /* Interpolated Gradient based on the provided LaTeX color map */
   --custom-gradient: linear-gradient(135deg, 
     rgb(46, 80, 233) 0%,
     rgb(49, 83, 255) 3.23%,
@@ -118,10 +117,6 @@ body {
   text-decoration: none; padding: 0.6rem 1rem; border-radius: 8px;
   transition: all 0.2s ease; cursor: pointer; border: 1px solid transparent;
 }
-/* .sidebar nav a:hover { color: var(--ink); background: rgba(255,255,255,0.03); } */
-/* .sidebar nav a.active {
-  background: var(--accent-soft); color: var(--accent); border-color: rgba(74, 111, 255, 0.2); font-weight: 600;
-} */
 .sidebar nav a:hover {
   background: var(--accent-soft); color: var(--ink); border-color: rgba(74, 111, 255, 0.2); font-weight: 600;
 }
@@ -170,7 +165,6 @@ body {
   border-radius: 99px; text-decoration: none; transition: all 0.2s ease; cursor: pointer;
 }
 .btn i { font-size: 1.1rem; }
-/* .btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); transform: translateY(-2px); } */
 .btn:hover { 
   background: var(--custom-gradient); 
   color: #ffffff; 
@@ -209,7 +203,6 @@ body {
 .card-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
 .tag { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: rgba(255,255,255,0.05); border: 1px solid var(--hairline); color: var(--ink-2); transition: all 0.2s ease; cursor: pointer; text-decoration: none;}
 .tag.highlight { background: var(--custom-gradient); color: var(--ink); border: none; font-weight: 600; }
-/* .tag:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); } */
 .tag:hover { border-color: var(--accent); color: var(--ink); background: var(--accent); }
 
 /* ---------- Timeline Architecture ---------- */
@@ -321,7 +314,6 @@ body {
 
     <div class="btn-group reveal delay-2">
       <span class="btn-label" style="font-weight: bolder; color: var(--ink);">Links:</span>
-      <!-- <a href="CV.pdf" target="_blank" class="btn" style="background: var(--custom-gradient); color: #fff; border: none;"><i class="fa-solid fa-file-pdf"></i> CV</a> -->
       <a href="assets/cv.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> CV</a>
       <a href="https://scholar.google.com/citations?user=epVJoggAAAAJ" target="_blank" class="btn"><i class="ai ai-google-scholar"></i> Scholar</a>
       <a href="https://github.com/onur-keles" target="_blank" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -510,7 +502,6 @@ body {
       
       <div class="pub-card reveal delay-1">
         <div class="pub-media">
-          <!-- Replace src with your actual image or video path -->
           <img src="assets/paon_tip_img.png" alt="Abstract visualization of Padé Neurons">
         </div>
         <div class="pub-info">
@@ -538,7 +529,6 @@ body {
 
       <div class="pub-card reveal delay-2">
         <div class="pub-media">
-          <!-- Replace src with your actual image or video path -->
           <img src="assets/paon_paper_img.png" alt="Abstract visualization of Padé Neurons">
         </div>
         <div class="pub-info">
@@ -566,7 +556,6 @@ body {
 
       <div class="pub-card reveal delay-3">
         <div class="pub-media">
-          <!-- Replace src with your actual image or video path -->
           <img src="assets/rd_paper_img.png" alt="Abstract visualization of Padé Neurons">
         </div>
         <div class="pub-info">
@@ -594,7 +583,6 @@ body {
 
       <div class="pub-card reveal delay-4">
         <div class="pub-media">
-          <!-- Replace src with your actual image or video path -->
           <img src="assets/sor_paper_img.png" alt="Abstract visualization of Padé Neurons">
         </div>
         <div class="pub-info">
@@ -621,7 +609,6 @@ body {
 
       <div class="pub-card reveal delay-5">
         <div class="pub-media">
-          <!-- Replace src with your actual image or video path -->
           <img src="assets/selfvae_paper_img.png" alt="Abstract visualization of Padé Neurons">
         </div>
         <div class="pub-info">
@@ -648,7 +635,6 @@ body {
 
       <div class="pub-card reveal delay-6">
         <div class="pub-media">
-          <!-- Replace src with your actual image or video path -->
           <img src="assets/psnr_paper_img.png" alt="Abstract visualization of Padé Neurons">
         </div>
         <div class="pub-info">
@@ -675,7 +661,6 @@ body {
 
       <div class="pub-card reveal delay-7">
         <div class="pub-media">
-          <!-- Replace src with your actual image or video path -->
           <img src="assets/eye_paper_img.png" alt="Abstract visualization of Padé Neurons">
         </div>
         <div class="pub-info">
@@ -762,11 +747,6 @@ body {
         <div class="card-meta">Fall 2023 — Spring 2025</div>
         <div class="card-desc">Koç University İş Bankası Artificial Intelligence (KUIS AI) Center, Koç University</div>
       </div>
-      <!-- <div class="card reveal-slide delay-2">
-        <h3 class="card-title">Research about Super-ONNs in Image Super-Resolution</h3>
-        <div class="card-meta">Spring 2021 — Fall 2023</div>
-        <div class="card-desc">KUIS AI Center, Koç University</div>
-      </div> -->
       <div class="card reveal-slide delay-2">
         <h3 class="card-title">Explainable Deep Learning Approaches for Image and Video Restoration and Compression (120C156)</h3>
         <div class="card-meta">Spring 2021 — Spring 2024</div>
@@ -782,16 +762,6 @@ body {
         <div class="card-meta">Fall 2019 — Spring 2021</div>
         <div class="card-desc">The Scientific and Technological Research Council of Türkiye (TÜBİTAK) Project, KUIS AI Center</div>
       </div>
-      <!-- <div class="card reveal-slide delay-6">
-        <h3 class="card-title">Image Dehazing with Deep Learning</h3>
-        <div class="card-meta">Spring 2020</div>
-        <div class="card-desc">Koç University</div> 
-      </div>
-      <div class="card reveal-slide delay-7">
-        <h3 class="card-title">Single Image Super-Resolution with Deep Learning</h3>
-        <div class="card-meta">Fall 2019</div>
-        <div class="card-desc">Koç University</div> 
-      </div> -->
       <div class="card reveal-slide delay-5">
         <h3 class="card-title">Adjustment of Digital Screen to Compensate the Eye Refractive Errors via Image Processing (19A02P1)</h3>
         <div class="card-meta">Spring 2019</div>
@@ -844,7 +814,6 @@ body {
       <div class="card reveal-slide delay-7">
         <h3 class="card-title">IEEE International Conference on Image Processing (ICIP)</h3>
         <div class="card-meta">2022 — 2024</div>
-        <!-- <div class="card-desc">Placeholder for future reviewership details.</div> -->
       </div>
     </div>
   </section>
@@ -942,7 +911,6 @@ body {
     <h1 class="page-title reveal">Community Involvement</h1>
     <div class="grid">
       <div class="card reveal-slide delay-1">
-        <!-- <img src="zl.png" class="card-img-top" alt="Zeybek Dance"> -->
         <h3 class="card-title">Boğaziçi Zeybek Ekibi</h3>
         <div class="card-meta">July 2013 — Current</div>
         <div class="card-desc">A <a href="https://www.instagram.com/bogazicizeybek/" target="_blank" class="card-desc">group</a> of people <a href="https://www.youtube.com/@bogazicizeybekekibi" target="_blank" class="card-desc">working</a> to keep a fading culture alive in Boğaziçi University.</div>
@@ -1096,11 +1064,9 @@ copyBtn.addEventListener('click', () => {
     const x = (W / 2) - (img.width / 2) * scale * 0.975;
     const y = (H / 2) - (img.height / 2) * scale * 0.75;
     octx.drawImage(img, x, y, img.width * scale, img.height * scale);
-    // octx.drawImage(img, 0, 0, W, H);
     octx.font = '800 36px Schibsted Grotesk';
     octx.fillStyle = '#ffffff';
     octx.textAlign = 'center';
-    //octx.fillText('ONUR', W/2, H - 40);
     requestAnimationFrame(renderLoop);
   };
   

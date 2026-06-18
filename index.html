@@ -109,7 +109,7 @@ body {
 }
 .sidebar-header { margin-bottom: 2.5rem; }
 .sidebar-mark { font-family: var(--display); font-weight: 800; font-size: 1.6rem; color: var(--ink); letter-spacing: -.02em; }
-.sidebar-mark span { background: var(--custom-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.sidebar-mark span { background: var(--custom-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
 .sidebar nav { display: flex; flex-direction: column; gap: 0.4rem; }
 .sidebar nav a {
@@ -147,10 +147,10 @@ body {
 
 /* ---------- Hero & Canvas ---------- */
 .hero-layout { display: flex; align-items: center; gap: 1rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
-.hero-canvas-container { position: relative; width: 250px; height: 250px; border-radius: 16px; overflow: hidden; background: transparent; border: transparent; flex-shrink: 0; } /*background var(--paper-card), border 1px solid var(--hairline)*/
+.hero-canvas-container { position: relative; width: 250px; height: 250px; border-radius: 16px; overflow: hidden; background: transparent; border: transparent; flex-shrink: 0; }
 #aiCanvas { width: 100%; height: 100%; display: block; }
 .hero-text h1 { font-family: var(--display); font-weight: 800; font-size: 3.5rem; letter-spacing: -.03em; margin-bottom: 1rem; line-height: 1.1; color: var(--title-color); }
-.hero-text h1 span { background: var(--custom-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-text h1 span { background: var(--custom-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
 .bio-paragraph { font-family: var(--latex); font-size: 1.15rem; line-height: 1.7; color: var(--ink); margin-bottom: 1.5rem; font-weight: 550;}
 .research-paragraph { font-family: var(--latex); font-size: 1.05rem; color: var(--ink-2); margin-bottom: 3rem; background: var(--paper-card); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--hairline); font-weight: 600; }
@@ -202,8 +202,10 @@ body {
 .card-desc { font-family: var(--latex); font-size: 1.1rem; line-height: 1.6; color: var(--ink); flex-grow: 1; margin-bottom: 1.5rem; }
 .card-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
 .tag { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: rgba(255,255,255,0.05); border: 1px solid var(--hairline); color: var(--ink-2); transition: all 0.2s ease; cursor: pointer; text-decoration: none;}
+.taghigh { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: rgba(255,255,255,0.05); border: 1px solid var(--hairline); color: var(--ink-2); transition: all 0.2s ease; cursor: pointer; text-decoration: none;}
 .tag.highlight { background: var(--custom-gradient); color: var(--ink); border: none; font-weight: 600; }
 .tag:hover { border-color: var(--accent); color: var(--ink); background: var(--accent); }
+.taghigh:hover { border-color: var(--custom-gradient); color: var(--ink); background: var(--custom-gradient); font-weight: 700;}
 
 /* ---------- Timeline Architecture ---------- */
 .timeline { display: flex; flex-direction: column; }
@@ -233,7 +235,7 @@ body {
 
 .pub-authors { font-family: var(--display); font-size: 1.05rem; color: var(--ink-2); margin-bottom: 0.3rem; }
 .pub-authors .me { font-weight: 800; color: var(--title-color); }
-.pub-venue { font-family: var(--mono); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem; background: var(--custom-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; width: fit-content; }
+.pub-venue { font-family: var(--mono); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem; background: var(--custom-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; width: fit-content; }
 .pub-desc { font-family: var(--latex); font-size: 1.15rem; line-height: 1.35; color: var(--ink); flex-grow: 1; margin-bottom: 1.5rem; font-weight: 500;}
 
 /* ---------- BibTeX Modal Styling ---------- */
@@ -883,23 +885,23 @@ body {
     <div class="grid">
       <div class="card reveal-slide delay-1">
         <h3 class="card-title">Programming</h3>
-        <div class="card-tags"><span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">C#</span><span class="tag">C/C++</span><span class="tag">VHDL</span><span class="tag">PIC C</span></div>
+        <div class="card-tags"><span class="taghigh">Python</span><span class="taghigh">MATLAB</span><span class="tag">C#</span><span class="tag">C/C++</span><span class="tag">VHDL</span><span class="tag">PIC C</span></div>
       </div>
       <div class="card reveal-slide delay-2">
         <h3 class="card-title">Frameworks</h3>
-        <div class="card-tags"><span class="tag">PyTorch</span><span class="tag">NumPy</span></div>
+        <div class="card-tags"><span class="taghigh">PyTorch</span><span class="taghigh">NumPy</span><span class="taghigh">OpenCV</span></div>
       </div>
       <div class="card reveal-slide delay-3">
         <h3 class="card-title">Languages</h3>
-        <div class="card-tags"><span class="tag">Turkish</span><span class="tag">English</span><span class="tag">Chinese</span></div>
+        <div class="card-tags"><span class="taghigh">Turkish</span><span class="taghigh">English</span><span class="tag">Chinese</span></div>
       </div>
       <div class="card reveal-slide delay-4">
         <h3 class="card-title">Document Creation</h3>
-        <div class="card-tags"><span class="tag">LaTeX</span><span class="tag">MS Office</span><span class="tag">LibreOffice</span></div>
+        <div class="card-tags"><span class="taghigh">LaTeX</span><span class="taghigh">Microsoft Office</span><span class="taghigh">LibreOffice</span></div>
       </div>
       <div class="card reveal-slide delay-5">
         <h3 class="card-title">CAD Software</h3>
-        <div class="card-tags"><span class="tag">OrCAD</span><span class="tag">PSpice</span><span class="tag">Proteus</span><span class="tag">Xilinx</span></div>
+        <div class="card-tags"><span class="taghigh">OrCAD</span><span class="tag">PSpice</span><span class="tag">Proteus</span><span class="tag">Xilinx</span></div>
       </div>
     </div>
   </section>

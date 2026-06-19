@@ -202,10 +202,13 @@ body {
 .card-desc { font-family: var(--latex); font-size: 1.1rem; line-height: 1.6; color: var(--ink); flex-grow: 1; margin-bottom: 1.5rem; }
 .card-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
 .tag { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: rgba(255,255,255,0.05); border: 1px solid var(--hairline); color: var(--ink-2); transition: all 0.2s ease; cursor: pointer; text-decoration: none;}
-.taghigh { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: rgba(255,255,255,0.05); border: 1px solid var(--hairline); color: var(--ink-2); transition: all 0.2s ease; cursor: pointer; text-decoration: none;}
-.tag.highlight { background: var(--custom-gradient); color: var(--ink); border: none; font-weight: 600; }
+.tagstress { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: rgba(255,255,255,0.05); border: 1px solid var(--hairline); color: var(--ink-2); transition: all 0.2s ease; cursor: pointer; text-decoration: none;}
+.taghigh { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: var(--custom-gradient); border: 1px solid var(--custom-gradient); color: var(--ink); transition: all 0.2s ease; cursor: pointer; text-decoration: none; font-weight: 600; }
+.taghigh.topconf { background: rgb(209, 175, 22); border: 1px solid rgb(209, 175, 22); color: var(--paper); }
+.taghigh.conf { background: rgb(0, 147, 255); border: 1px solid rgb(0, 147, 255); }
+.taghigh.ws { background: rgb(212, 147, 81); border: 1px solid rgb(212, 147, 81); color: var(--paper); }
 .tag:hover { border-color: var(--accent); color: var(--ink); background: var(--accent); }
-.taghigh:hover { border-color: var(--custom-gradient); color: var(--ink); background: var(--custom-gradient); font-weight: 700;}
+.tagstress:hover { border-color: var(--custom-gradient); color: var(--ink); background: var(--custom-gradient); font-weight: 700;}
 
 /* ---------- Timeline Architecture ---------- */
 .timeline { display: flex; flex-direction: column; }
@@ -220,13 +223,13 @@ body {
 .timeline-desc { font-family: var(--latex); font-size: 1.15rem; line-height: 1.6; color: var(--ink); font-weight: 500;}
 
 /* ---------- Vertical Pub Layout with Media ---------- */
-.pub-list { display: flex; flex-direction: column; gap: 2.5rem; }
+.pub-list { display: flex; flex-direction: column; gap: 1.5rem; }
 .pub-card { background: var(--paper-card); border: 1px solid var(--hairline); border-radius: 12px; padding: 1.8rem; display: flex; flex-direction: row; gap: 2rem; transition: all 0.3s ease; }
 .pub-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); }
 
 /* The Restored Media Section */
-.pub-media { flex: 0 0 280px; border-radius: 8px; overflow: hidden; background: #000; border: 1px solid var(--hairline); display: flex; align-items: center; justify-content: center; }
-.pub-media img, .pub-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pub-media { flex: 0 0 280px; border-radius: 8px; overflow: hidden; background: transparent; border: transparent; display: flex; align-items: center; justify-content: center; }
+.pub-media img, .pub-media video { width: 100%; height: 100%; object-fit: contain; display: block; }
 
 .pub-info { flex: 1; display: flex; flex-direction: column; }
 .pub-title { font-family: var(--display); font-size: 1.35rem; font-weight: 800; line-height: 1.3; margin-bottom: 0.5rem; }
@@ -514,7 +517,7 @@ body {
             Extension of ICIP 2024 paper. In our experiments, we replace classic neurons in some well-known neural image super-resolution, compression, and classification models based on the ResNet architecture with Paons, and demonstrate that neural models built by Paons provide better or equal performance than their classic counterparts with a smaller number of layers.
           </div>
           <div class="pub-tags">
-            <span class="tag highlight">Journal</span>
+            <span class="taghigh">Journal</span>
             <button class="tag bibtex-btn" data-bibtex="@article{keles2026pade,
   title={Padé Neurons for Efficient Neural Models},
   author={Kele{\s}, Onur and Tekalp, A. Murat},
@@ -541,8 +544,8 @@ body {
             In this paper, we introduce a brand new neuron model called Padé neurons, inspired by the Padé approximants, which is the best mathematical approximation of a transcendental function as a ratio of polynomials with different orders, and show that Paons are a super set of all other proposed neuron models.
           </div>
           <div class="pub-tags">
-            <span class="tag highlight">Conference</span>
-            <a href="https://github.com/onur-keles/Paon" class="taghigh" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            <span class="taghigh conf">Conference</span>
+            <a href="https://github.com/onur-keles/Paon" class="tagstress" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
             <button class="tag bibtex-btn" data-bibtex="@inproceedings{keles2024paon,
   title={Paon: A New Neuron Model Using Padé Approximants},
   author={Kele{\s}, Onur and Tekalp, A. Murat},
@@ -595,7 +598,7 @@ body {
             In this paper, we propose the concept of self-organized operational residual (SOR) blocks, and present hybrid network architectures combining regular residual and SOR blocks to strike a balance between the benefits of stronger non-linearity and the overall number of parameters.
           </div>
           <div class="pub-tags">
-            <span class="tag highlight">Conference</span>
+            <span class="taghigh conf">Conference</span>
             <button class="tag bibtex-btn" data-bibtex="@inproceedings{keles2021self,
     title={Self-organized residual blocks for image super-resolution},
     author={Keleş, Onur and Tekalp, A. Murat and Malik, Junaid and Kıranyaz, Serkan},
@@ -621,7 +624,7 @@ body {
             In this paper, we propose to replace the convolutional and GDN layers in the variational autoencoder with self-organized operational layers, and propose a novel self-organized variational autoencoder (Self-VAE) architecture that benefits from stronger non-linearity.
           </div>
           <div class="pub-tags">
-            <span class="tag highlight">Conference</span>
+            <span class="taghigh conf">Conference</span>
             <button class="tag bibtex-btn" data-bibtex="@inproceedings{yilmaz2021self,
     title={Self-organized variational autoencoders (self-vae) for learned image compression},
     author={Yılmaz, M. Akın and Keleş, Onur and Güven, Hilal and Tekalp, A. Murat and Malik, Junaid and Kıranyaz, Serkan},
@@ -647,7 +650,7 @@ body {
             This paper investigates different approaches to computing PSNR for sets of images, single video, and sets of video and the relation between them. We show that the difference depends on the distribution of MSE over the set of images or video, and that this distribution is task-dependent.
           </div>
           <div class="pub-tags">
-            <span class="tag highlight">Conference</span>
+            <span class="taghigh conf">Conference</span>
             <button class="tag bibtex-btn" data-bibtex="@inproceedings{keles2021psnr,
     author={Keleş, Onur and Yılmaz, M. Akın and Tekalp, A. Murat and Korkmaz, Cansu and Doğan, Zafer},
     booktitle={Picture Coding Symposium (PCS)}, 
@@ -673,7 +676,7 @@ body {
             In this work, a method of adjustment on digital screens is proposed for the visually impaired people. By the point spread function of human eye being obtained, a digital screen or image can be changed by deconvolution method so that the patient can be given a clear vision.
           </div>
           <div class="pub-tags">
-            <span class="tag highlight">Conference</span>
+            <span class="taghigh conf">Conference</span>
             <button class="tag bibtex-btn" data-bibtex="@inproceedings{keles2019adjustmentofscreens,
     author={Keleş, Onur and Anarım, Emin},
     booktitle={Ninth International Conference on Image Processing Theory, Tools and Applications (IPTA)}, 
@@ -885,23 +888,23 @@ body {
     <div class="grid">
       <div class="card reveal-slide delay-1">
         <h3 class="card-title">Programming</h3>
-        <div class="card-tags"><span class="taghigh">Python</span><span class="taghigh">MATLAB</span><span class="tag">C#</span><span class="tag">C/C++</span><span class="tag">VHDL</span><span class="tag">PIC C</span></div>
+        <div class="card-tags"><span class="tagstress">Python</span><span class="tagstress">MATLAB</span><span class="tag">C#</span><span class="tag">C/C++</span><span class="tag">VHDL</span><span class="tag">PIC C</span></div>
       </div>
       <div class="card reveal-slide delay-2">
         <h3 class="card-title">Frameworks</h3>
-        <div class="card-tags"><span class="taghigh">PyTorch</span><span class="taghigh">NumPy</span><span class="taghigh">OpenCV</span></div>
+        <div class="card-tags"><span class="tagstress">PyTorch</span><span class="tagstress">NumPy</span><span class="tagstress">OpenCV</span></div>
       </div>
       <div class="card reveal-slide delay-3">
         <h3 class="card-title">Languages</h3>
-        <div class="card-tags"><span class="taghigh">Turkish</span><span class="taghigh">English</span><span class="tag">Chinese</span></div>
+        <div class="card-tags"><span class="tagstress">Turkish</span><span class="tagstress">English</span><span class="tag">Chinese</span></div>
       </div>
       <div class="card reveal-slide delay-4">
         <h3 class="card-title">Document Creation</h3>
-        <div class="card-tags"><span class="taghigh">LaTeX</span><span class="taghigh">Microsoft Office</span><span class="taghigh">LibreOffice</span></div>
+        <div class="card-tags"><span class="tagstress">LaTeX</span><span class="tagstress">Microsoft Office</span><span class="tagstress">LibreOffice</span></div>
       </div>
       <div class="card reveal-slide delay-5">
         <h3 class="card-title">CAD Software</h3>
-        <div class="card-tags"><span class="taghigh">OrCAD</span><span class="tag">PSpice</span><span class="tag">Proteus</span><span class="tag">Xilinx</span></div>
+        <div class="card-tags"><span class="tagstress">OrCAD</span><span class="tag">PSpice</span><span class="tag">Proteus</span><span class="tag">Xilinx</span></div>
       </div>
     </div>
   </section>

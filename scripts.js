@@ -73,11 +73,9 @@ copyBtn.addEventListener('click', () => {
     const x = (W / 2) - (img.width / 2) * scale * 0.975;
     const y = (H / 2) - (img.height / 2) * scale * 0.75;
     octx.drawImage(img, x, y, img.width * scale, img.height * scale);
-    // octx.drawImage(img, 0, 0, W, H);
     octx.font = '800 36px Schibsted Grotesk';
     octx.fillStyle = '#ffffff';
     octx.textAlign = 'center';
-    //octx.fillText('ONUR', W/2, H - 40);
     requestAnimationFrame(renderLoop);
   };
   

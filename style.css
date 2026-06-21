@@ -1,5 +1,4 @@
 :root {
-  /* Interpolated Gradient based on the provided LaTeX color map */
   --custom-gradient: linear-gradient(135deg, 
     rgb(46, 80, 233) 0%,
     rgb(49, 83, 255) 3.23%,
@@ -35,12 +34,11 @@
     rgb(209, 175, 22) 100%
   );
   
-  /* Dark Theme Palette */
   --paper: #0B0E14;
   --paper-card: #151A23;
   --ink: #E2E8F0;
   --ink-2: #94A3B8;
-  --hairline: #222834; /* #222834 */
+  --hairline: #222834;
   --accent: #4A6FFF;
   --accent-soft: rgba(74, 111, 255, 0.15);
   --title-color: #FFFFFF;
@@ -59,7 +57,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--display);
-  font-size: 1.0625rem; /* 1.0625rem; */
+  font-size: 1.0625rem; 
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   display: flex;
@@ -102,10 +100,6 @@ body {
   text-decoration: none; padding: 0.6rem 1rem; border-radius: 8px;
   transition: all 0.2s ease; cursor: pointer; border: 1px solid transparent;
 }
-/* .sidebar nav a:hover { color: var(--ink); background: rgba(255,255,255,0.03); } */
-/* .sidebar nav a.active {
-  background: var(--accent-soft); color: var(--accent); border-color: rgba(74, 111, 255, 0.2); font-weight: 600;
-} */
 .sidebar nav a:hover {
   background: var(--accent-soft); color: var(--ink); border-color: rgba(74, 111, 255, 0.2); font-weight: 600;
 }
@@ -154,7 +148,6 @@ body {
   border-radius: 99px; text-decoration: none; transition: all 0.2s ease; cursor: pointer;
 }
 .btn i { font-size: 1.1rem; }
-/* .btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); transform: translateY(-2px); } */
 .btn:hover { 
   background: var(--custom-gradient); 
   color: #ffffff; 
@@ -179,12 +172,12 @@ body {
 .card { background: var(--paper-card); border: 1px solid var(--hairline); border-radius: 12px; padding: 1.8rem; display: flex; flex-direction: column; transition: all 0.3s ease; height: 100%; }
 .card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); }
 .card-img-top {
-  width: calc(100% + 3.6rem); /* Reverses the 1.8rem padding on left/right */
-  margin: -1.8rem -1.8rem 1.5rem -1.8rem; /* Pulls the image edge-to-edge */
-  height: 160px; /* Fixed height for uniformity */
+  width: calc(100% + 3.6rem); 
+  margin: -1.8rem -1.8rem 1.5rem -1.8rem; 
+  height: 160px; 
   object-fit: cover;
   display: block;
-  border-radius: 11px 11px 0 0; /* Matches card's rounded top corners */
+  border-radius: 11px 11px 0 0; 
   border-bottom: 1px solid var(--hairline);
 }
 .card-title { font-family: var(--display); font-size: 1.15rem; font-weight: 700; color: var(--title-color); line-height: 1.4; margin-bottom: 0.5rem; }
@@ -197,8 +190,6 @@ body {
 .taghigh.topconf { background: rgb(209, 175, 22); border: 1px solid rgb(209, 175, 22); color: var(--paper); }
 .taghigh.conf { background: rgb(0, 147, 255); border: 1px solid rgb(0, 147, 255); }
 .taghigh.ws { background: rgb(212, 147, 81); border: 1px solid rgb(212, 147, 81); color: var(--paper); }
-/* .tag.highlight { background: var(--custom-gradient); color: var(--ink); border: none; font-weight: 600; } */
-/* .tag:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); } */
 .tag:hover { border-color: var(--accent); color: var(--ink); background: var(--accent); }
 .tagstress:hover { border-color: var(--custom-gradient); color: var(--ink); background: var(--custom-gradient); font-weight: 700;}
 

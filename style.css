@@ -45,7 +45,7 @@
   
   --mono: 'IBM Plex Mono', ui-monospace, monospace;
   --display: 'Schibsted Grotesk', system-ui, sans-serif;
-  --latex: 'Computer Modern Serif', Georgia, serif;
+  --latex: 'Computer Modern Sans', system-ui, sans-serif;
   
   --sidebar-width: 320px;
 }
@@ -135,7 +135,7 @@ body {
 .hero-text h1 { font-family: var(--display); font-weight: 800; font-size: 3.5rem; letter-spacing: -.03em; margin-bottom: 1rem; line-height: 1.1; color: var(--title-color); }
 .hero-text h1 span { background: var(--custom-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
-.bio-paragraph { font-family: var(--latex); font-size: 1.15rem; line-height: 1.7; color: var(--ink); margin-bottom: 1.5rem; font-weight: 550;}
+.bio-paragraph { font-family: var(--latex); font-size: 1.15rem; line-height: 1.7; color: var(--ink); margin-bottom: 1.5rem; font-weight: 500;}
 .research-paragraph { font-family: var(--latex); font-size: 1.05rem; color: var(--ink-2); margin-bottom: 3rem; background: var(--paper-card); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--hairline); font-weight: 600; }
 .research-paragraph strong { color: var(--title-color); font-family: var(--display);}
 

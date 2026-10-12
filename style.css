@@ -1,38 +1,38 @@
 :root {
-  --custom-gradient: linear-gradient(135deg, 
+  --custom-gradient: linear-gradient(135deg,
     rgb(46, 80, 233) 0%,
-    rgb(49, 83, 255) 3.23%,
-    rgb(52, 87, 255) 6.45%,
-    rgb(54, 92, 255) 9.68%,
-    rgb(55, 97, 255) 12.9%,
-    rgb(54, 102, 255) 16.13%,
-    rgb(52, 107, 255) 19.35%,
-    rgb(46, 113, 255) 22.58%,
-    rgb(35, 118, 255) 25.81%,
-    rgb(31, 124, 255) 29.03%,
-    rgb(29, 128, 255) 32.26%,
-    rgb(24, 133, 255) 35.48%,
-    rgb(19, 137, 255) 38.71%,
-    rgb(12, 141, 255) 41.94%,
-    rgb(0, 144, 255) 45.16%,
-    rgb(0, 147, 255) 48.39%,
-    rgb(17, 149, 248) 51.61%,
-    rgb(32, 151, 227) 54.84%,
-    rgb(44, 153, 201) 58.06%,
-    rgb(63, 154, 174) 61.29%,
-    rgb(85, 154, 143) 64.52%,
-    rgb(110, 154, 112) 67.74%,
-    rgb(135, 152, 81) 70.97%,
-    rgb(161, 150, 55) 74.19%,
-    rgb(181, 148, 50) 77.42%,
-    rgb(198, 146, 65) 80.65%,
-    rgb(212, 147, 81) 83.87%,
-    rgb(213, 152, 68) 87.1%,
-    rgb(210, 158, 58) 90.32%,
-    rgb(206, 164, 50) 93.55%,
-    rgb(206, 169, 40) 96.77%,
-    rgb(209, 175, 22) 100%
-  );
+    rgb(50, 85, 255) 3.23%,
+    rgb(54, 90, 255) 6.45%,
+    rgb(56, 97, 255) 9.68%,
+    rgb(57, 104, 255) 12.9%,
+    rgb(56, 112, 255) 16.13%,
+    rgb(53, 119, 255) 19.35%,
+    rgb(46, 126, 255) 22.58%,
+    rgb(32, 134, 255) 25.81%,
+    rgb(27, 142, 255) 29.03%,
+    rgb(24, 148, 255) 32.26%,
+    rgb(18, 154, 255) 35.48%,
+    rgb(12, 160, 255) 38.71%,
+    rgb(3, 166, 255) 41.94%,
+    rgb(0, 170, 255) 45.16%,
+    rgb(0, 174, 255) 48.39%,
+    rgb(9, 177, 247) 51.61%,
+    rgb(28, 180, 227) 54.84%,
+    rgb(43, 183, 202) 58.06%,
+    rgb(67, 184, 175) 61.29%,
+    rgb(96, 185, 145) 64.52%,
+    rgb(129, 184, 115) 67.74%,
+    rgb(160, 182, 85) 70.97%,
+    rgb(193, 178, 60) 74.19%,
+    rgb(219, 175, 55) 77.42%,
+    rgb(241, 173, 69) 80.65%,
+    rgb(255, 174, 85) 83.87%,
+    rgb(255, 182, 72) 87.1%,
+    rgb(255, 190, 63) 90.32%,
+    rgb(251, 198, 55) 93.55%,
+    rgb(251, 206, 46) 96.77%,
+    rgb(255, 214, 28) 100%
+);
   
   --paper: #0B0E14;
   --paper-card: #151A23;
@@ -72,9 +72,9 @@ body {
   mix-blend-mode: screen; animation: moveBlob 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .blob-1 { width: 45vw; height: 45vw; background: rgb(46, 80, 233); top: -10%; left: -10%; animation-duration: 25s; }
-.blob-2 { width: 40vw; height: 40vw; background: rgb(209, 175, 22); bottom: -10%; right: -10%; animation-duration: 22s; animation-delay: -5s; }
-.blob-3 { width: 40vw; height: 40vw; background: rgb(212, 147, 81); top: 30%; left: 20%; animation-duration: 28s; animation-delay: -10s; }
-.blob-4 { width: 35vw; height: 35vw; background: rgb(0, 147, 255); top: 10%; right: 20%; animation-duration: 20s; animation-delay: -15s; }
+.blob-2 { width: 40vw; height: 40vw; background: rgb(255, 214, 28); bottom: -10%; right: -10%; animation-duration: 22s; animation-delay: -5s; }
+.blob-3 { width: 40vw; height: 40vw; background: rgb(255, 174, 85); top: 30%; left: 20%; animation-duration: 28s; animation-delay: -10s; }
+.blob-4 { width: 35vw; height: 35vw; background: rgb(0, 170, 255); top: 10%; right: 20%; animation-duration: 20s; animation-delay: -15s; }
 
 @keyframes moveBlob {
   0% { transform: translate(0, 0) scale(1); }
@@ -104,7 +104,7 @@ body {
   background: var(--accent-soft); color: var(--ink); border-color: rgba(74, 111, 255, 0.2); font-weight: 600;
 }
 .sidebar nav a.active {
-  background: var(--custom-gradient); color: var(--ink); border-color: var(--custom-gradient); font-weight: 600;
+  background: var(--custom-gradient); color: var(--paper); border-color: var(--custom-gradient); font-weight: 600;
 }
 
 /* ---------- Main Content Area ---------- */
@@ -150,7 +150,7 @@ body {
 .btn i { font-size: 1.1rem; }
 .btn:hover { 
   background: var(--custom-gradient); 
-  color: #ffffff; 
+  color: var(--paper);
   border-color: var(--custom-gradient); 
   transform: translateY(-2px); 
   box-shadow: 0 10px 20px rgba(46, 80, 233, 0.25);
@@ -186,12 +186,12 @@ body {
 .card-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
 .tag { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: rgba(255,255,255,0.05); border: 1px solid var(--hairline); color: var(--ink-2); transition: all 0.2s ease; cursor: pointer; text-decoration: none;}
 .tagstress { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: rgba(255,255,255,0.05); border: 1px solid var(--hairline); color: var(--ink-2); transition: all 0.2s ease; cursor: pointer; text-decoration: none;}
-.taghigh { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: var(--custom-gradient); border: 1px solid var(--custom-gradient); color: var(--ink); transition: all 0.2s ease; cursor: pointer; text-decoration: none; font-weight: 600; }
+.taghigh { font-family: var(--mono); font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 99px; background: var(--custom-gradient); border: 1px solid var(--custom-gradient); color: var(--paper); transition: all 0.2s ease; cursor: pointer; text-decoration: none; font-weight: 600; }
 .taghigh.topconf { background: rgb(209, 175, 22); border: 1px solid rgb(209, 175, 22); color: var(--paper); }
 .taghigh.conf { background: rgb(0, 147, 255); border: 1px solid rgb(0, 147, 255); }
 .taghigh.ws { background: rgb(212, 147, 81); border: 1px solid rgb(212, 147, 81); color: var(--paper); }
 .tag:hover { border-color: var(--accent); color: var(--ink); background: var(--accent); }
-.tagstress:hover { border-color: var(--custom-gradient); color: var(--ink); background: var(--custom-gradient); font-weight: 700;}
+.tagstress:hover { border-color: var(--custom-gradient); color: var(--paper); background: var(--custom-gradient); font-weight: 700;}
 
 /* ---------- Timeline Architecture ---------- */
 .timeline { display: flex; flex-direction: column; }

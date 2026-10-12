@@ -142,6 +142,8 @@ copyBtn.addEventListener('click', () => {
   }
 
   function renderLoop() {
+    drawPixelated(1); return;
+    
     frameCount++;
     const cycle = frameCount % 1100; 
 

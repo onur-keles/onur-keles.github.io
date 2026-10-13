@@ -104,7 +104,7 @@ body {
   background: var(--accent-soft); color: var(--ink); border-color: rgba(74, 111, 255, 0.2); font-weight: 600;
 }
 .sidebar nav a.active {
-  background: var(--custom-gradient); color: var(--paper); border-color: var(--custom-gradient); font-weight: 600;
+  background: var(--custom-gradient); color: #ffffff; border-color: var(--custom-gradient); font-weight: 600;
 }
 
 /* ---------- Main Content Area ---------- */
